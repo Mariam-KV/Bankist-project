@@ -1,0 +1,42 @@
+@import "_variables.sass"
+.operations
+    height: 100vh
+    &__info
+        display: grid
+        grid-template-columns: min-content 1fr
+        gap: 3rem
+.lineOfButtons
+    display: grid
+    gap: 2rem
+    grid-template-columns: repeat(3,24rem)
+    padding: 7rem 0
+    text-align: center
+.color-button
+    transition: .6s
+    transition-duration: 1s
+    &:active
+        transform: translateY(-2rem)
+.button1
+    background-color: $secondary
+    &:hover
+        background-color: $secondary-darker
+    
+.button2
+    background-color: $primary
+    &:hover
+        background-color: $primary-darker
+
+.button3
+    background-color: $tertiary
+    &:hover
+        background-color: $tertiary-darker
+   
+
+.yellow
+    svg
+        fill: $secondary-darker
+        background-color: $secondary-opacity
+.red
+    svg
+        fill: $tertiary-darker
+        background-color: $tertiary-opacity

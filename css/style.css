@@ -2,6 +2,9 @@
   background-color: #5ec576;
   padding: 1rem 2rem;
   border-radius: 5rem;
+  text-decoration: none;
+  color: #444;
+  font-size: 2rem;
 }
 
 .secondary-button {
@@ -38,6 +41,12 @@
   line-height: 3.5rem;
 }
 
+.title-gray {
+  font-size: 2.4rem;
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+
 .svg1 {
   overflow: hidden;
 }
@@ -56,12 +65,19 @@
 
 .p-side {
   padding: 0 10rem;
+}
+
+.p-side2 {
+  padding: 0 20rem;
 }
 
 .main-button {
   background-color: #5ec576;
   padding: 1rem 2rem;
   border-radius: 5rem;
+  text-decoration: none;
+  color: #444;
+  font-size: 2rem;
 }
 
 .secondary-button {
@@ -98,6 +114,12 @@
   line-height: 3.5rem;
 }
 
+.title-gray {
+  font-size: 2.4rem;
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+
 .svg1 {
   overflow: hidden;
 }
@@ -116,6 +138,10 @@
 
 .p-side {
   padding: 0 10rem;
+}
+
+.p-side2 {
+  padding: 0 20rem;
 }
 
 .nav {
@@ -143,6 +169,9 @@
   background-color: #5ec576;
   padding: 1rem 2rem;
   border-radius: 5rem;
+  text-decoration: none;
+  color: #444;
+  font-size: 2rem;
 }
 
 .secondary-button {
@@ -179,6 +208,12 @@
   line-height: 3.5rem;
 }
 
+.title-gray {
+  font-size: 2.4rem;
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+
 .svg1 {
   overflow: hidden;
 }
@@ -197,6 +232,10 @@
 
 .p-side {
   padding: 0 10rem;
+}
+
+.p-side2 {
+  padding: 0 20rem;
 }
 
 h1 {
@@ -225,6 +264,9 @@ h1 {
   background-color: #5ec576;
   padding: 1rem 2rem;
   border-radius: 5rem;
+  text-decoration: none;
+  color: #444;
+  font-size: 2rem;
 }
 
 .secondary-button {
@@ -261,6 +303,12 @@ h1 {
   line-height: 3.5rem;
 }
 
+.title-gray {
+  font-size: 2.4rem;
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+
 .svg1 {
   overflow: hidden;
 }
@@ -279,6 +327,10 @@ h1 {
 
 .p-side {
   padding: 0 10rem;
+}
+
+.p-side2 {
+  padding: 0 20rem;
 }
 
 .features {
@@ -300,6 +352,135 @@ h1 {
   width: 100%;
 }
 
+.main-button {
+  background-color: #5ec576;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  text-decoration: none;
+  color: #444;
+  font-size: 2rem;
+}
+
+.secondary-button {
+  color: #5ec576;
+  font-size: 2rem;
+  border-block-end: 1px solid #5ec576;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.title1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.title-green {
+  color: #5ec576;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.title2 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.title-black {
+  font-size: 2rem;
+}
+
+.title-little {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 3.5rem;
+}
+
+.title-gray {
+  font-size: 2.4rem;
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+
+.svg1 {
+  overflow: hidden;
+}
+.svg1 svg {
+  fill: #4bbb7d;
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: rgba(94, 197, 118, 0.2274509804);
+}
+
+.p-3rem {
+  padding: 3rem 0;
+}
+
+.p-side {
+  padding: 0 10rem;
+}
+
+.p-side2 {
+  padding: 0 20rem;
+}
+
+.operations {
+  height: 100vh;
+}
+.operations__info {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 3rem;
+}
+
+.lineOfButtons {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 24rem);
+  padding: 7rem 0;
+  text-align: center;
+}
+
+.color-button {
+  transition: 0.6s;
+  transition-duration: 1s;
+}
+.color-button:active {
+  transform: translateY(-2rem);
+}
+
+.button1 {
+  background-color: #ffcb03;
+}
+.button1:hover {
+  background-color: #ffbb00;
+}
+
+.button2 {
+  background-color: #5ec576;
+}
+.button2:hover {
+  background-color: #4bbb7d;
+}
+
+.button3 {
+  background-color: #ff585f;
+}
+.button3:hover {
+  background-color: #fd424b;
+}
+
+.yellow svg {
+  fill: #ffbb00;
+  background-color: rgba(255, 205, 3, 0.1921568627);
+}
+
+.red svg {
+  fill: #fd424b;
+  background-color: rgba(255, 88, 96, 0.1764705882);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -317,8 +498,9 @@ body {
 }
 
 .container {
-  max-width: 120rem;
+  max-width: 130rem;
   margin: 0 auto;
+  padding: 0 5rem;
 }
 
 .container-first {
