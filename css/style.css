@@ -71,6 +71,16 @@ svg {
   padding: 0 20rem;
 }
 
+.name {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.little {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
 .main-button {
   background-color: #5ec576;
   padding: 1rem 2rem;
@@ -142,6 +152,16 @@ svg {
 
 .p-side2 {
   padding: 0 20rem;
+}
+
+.name {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.little {
+  font-size: 1.6rem;
+  font-weight: 300;
 }
 
 .nav {
@@ -161,9 +181,6 @@ svg {
   cursor: pointer;
   text-decoration: none;
 }
-.nav__links a:hover {
-  background-color: #4bbb7d;
-}
 
 .main-button {
   background-color: #5ec576;
@@ -236,6 +253,16 @@ svg {
 
 .p-side2 {
   padding: 0 20rem;
+}
+
+.name {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.little {
+  font-size: 1.6rem;
+  font-weight: 300;
 }
 
 h1 {
@@ -333,8 +360,18 @@ svg {
   padding: 0 20rem;
 }
 
+.name {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.little {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
 .features {
-  padding: 10rem 7rem;
+  padding: 10rem 7rem 15rem;
 }
 .features__box {
   display: grid;
@@ -425,8 +462,18 @@ svg {
   padding: 0 20rem;
 }
 
+.name {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.little {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
 .operations {
-  height: 100vh;
+  padding: 10rem 20rem;
 }
 .operations__info {
   display: grid;
@@ -558,14 +605,24 @@ svg {
   padding: 0 20rem;
 }
 
-.feedback {
-  padding: 10rem;
+.name {
+  font-size: 1.8rem;
+  font-weight: 500;
 }
-.feedback p {
-  line-height: 2.5rem;
+
+.little {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.feedback {
+  padding: 15rem 10rem;
+}
+.feedback .title-gray {
+  font-weight: 500;
 }
 .feedback__header {
-  padding: 10rem 10rem 5rem;
+  padding: 5rem 10rem;
 }
 .feedback__box {
   display: grid;
@@ -575,13 +632,11 @@ svg {
   padding: 0 10rem;
 }
 .feedback__box-down {
-  padding: 5rem 0;
+  padding: 3rem 0 5rem;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-}
-.feedback__box-down .title-gray {
-  padding: 0;
+  margin-left: 3rem;
 }
 .feedback__box-down img {
   border-radius: 100%;
@@ -597,6 +652,132 @@ svg {
   border: none;
   font-size: 3rem;
   font-weight: 500;
+}
+
+.main-button {
+  background-color: #5ec576;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  text-decoration: none;
+  color: #444;
+  font-size: 2rem;
+}
+
+.secondary-button {
+  color: #5ec576;
+  font-size: 2rem;
+  border-block-end: 1px solid #5ec576;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.title1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.title-green {
+  color: #5ec576;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.title2 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.title-black {
+  font-size: 2rem;
+}
+
+.title-little {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 3.5rem;
+}
+
+.title-gray {
+  font-size: 2.4rem;
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+
+.green svg {
+  fill: #4bbb7d;
+  background-color: rgba(94, 197, 118, 0.2274509804);
+}
+
+svg {
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.p-3rem {
+  padding: 3rem 0;
+}
+
+.p-side {
+  padding: 0 10rem;
+}
+
+.p-side2 {
+  padding: 0 20rem;
+}
+
+.name {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.little {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.tittle-white {
+  color: white;
+  font-size: 4rem;
+  font-weight: 500;
+  padding-bottom: 5rem;
+}
+
+.footer {
+  background-color: #444;
+}
+.footer__header {
+  padding: 7rem 10rem;
+}
+.footer__links {
+  text-align: center;
+  padding: 7rem 5rem 5rem;
+}
+
+.footerIn {
+  max-width: 95rem;
+  margin: 0 auto;
+}
+.footerIn .main-button {
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: black;
+  padding: 2rem 5rem;
+  display: block;
+  margin: 0 auto;
+}
+.footerIn ul {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+.footerIn ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
 }
 
 * {
@@ -616,11 +797,15 @@ body {
 }
 
 .container {
-  max-width: 130rem;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 0 5rem;
 }
 
 .container-first {
   height: 100vh;
+}
+
+section {
+  border-bottom: 1px solid #ddd;
 }/*# sourceMappingURL=style.css.map */
