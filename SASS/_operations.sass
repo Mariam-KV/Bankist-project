@@ -1,15 +1,18 @@
 @import "_variables.sass"
 .operations
-    padding: 10rem 20rem
+    padding: 10rem 17rem
     &__info
+        padding: 5rem 0
         display: grid
         grid-template-columns: min-content 1fr
         gap: 3rem
 .lineOfButtons
     display: grid
     gap: 2rem
-    grid-template-columns: repeat(3,24rem)
+    grid-template-columns: repeat(auto-fit,minmax(24rem,1fr))
     padding: 7rem 0
+    justify-items: center
+    align-items: center
     text-align: center
 .color-button
     

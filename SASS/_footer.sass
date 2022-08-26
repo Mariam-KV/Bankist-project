@@ -25,9 +25,10 @@
         display: block
         margin: 0 auto
     ul
-        display: flex
+        display: grid
+        grid-template-columns: repeat(auto-fit,minmax(15rem,1fr))
         gap : 5rem
-        justify-content: center
+        justify-items: center
         padding-bottom: 5rem
         a
             text-decoration: none

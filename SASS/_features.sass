@@ -1,12 +1,14 @@
 @import "_variables.sass"
 
 .features
-    
-    padding: 10rem 7rem 15rem
+    max-width: 110rem
+    margin: 0 auto
+    padding: 10rem 0 15rem
     &__box
         display: grid
         padding: 5rem 0
-        grid-template-areas: 1fr 1fr
+        grid-template-columns: 1fr 1fr 
+        align-items: center
         gap: 5rem
         &-left
             grid-column: 1/2
@@ -14,4 +16,5 @@
             
             grid-column: 2/3
         img
-            width: 100%
+            max-width: 100%
+        

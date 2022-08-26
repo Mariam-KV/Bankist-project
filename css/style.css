@@ -1,3 +1,7 @@
+.color-button {
+  width: 24rem;
+}
+
 .main-button {
   background-color: #5ec576;
   padding: 1rem 2rem;
@@ -79,6 +83,10 @@ svg {
 .little {
   font-size: 1.6rem;
   font-weight: 300;
+}
+
+.color-button {
+  width: 24rem;
 }
 
 .main-button {
@@ -182,6 +190,10 @@ svg {
   text-decoration: none;
 }
 
+.color-button {
+  width: 24rem;
+}
+
 .main-button {
   background-color: #5ec576;
   padding: 1rem 2rem;
@@ -279,12 +291,16 @@ h1 {
   display: grid;
   grid-template-columns: 1.25fr 0.75fr;
   padding: 15rem 0;
-  gap: 2rem;
+  gap: 5rem;
   justify-items: center;
   align-items: center;
 }
 .header__right img {
   width: 100%;
+}
+
+.color-button {
+  width: 24rem;
 }
 
 .main-button {
@@ -371,12 +387,15 @@ svg {
 }
 
 .features {
-  padding: 10rem 7rem 15rem;
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 10rem 0 15rem;
 }
 .features__box {
   display: grid;
   padding: 5rem 0;
-  grid-template-areas: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
   gap: 5rem;
 }
 .features__box-left {
@@ -386,7 +405,11 @@ svg {
   grid-column: 2/3;
 }
 .features__box img {
-  width: 100%;
+  max-width: 100%;
+}
+
+.color-button {
+  width: 24rem;
 }
 
 .main-button {
@@ -473,9 +496,10 @@ svg {
 }
 
 .operations {
-  padding: 10rem 20rem;
+  padding: 10rem 17rem;
 }
 .operations__info {
+  padding: 5rem 0;
   display: grid;
   grid-template-columns: min-content 1fr;
   gap: 3rem;
@@ -484,8 +508,10 @@ svg {
 .lineOfButtons {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(3, 24rem);
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
   padding: 7rem 0;
+  justify-items: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -530,6 +556,10 @@ svg {
 .red svg {
   fill: #fd424b;
   background-color: rgba(255, 88, 96, 0.1764705882);
+}
+
+.color-button {
+  width: 24rem;
 }
 
 .main-button {
@@ -622,14 +652,13 @@ svg {
   font-weight: 500;
 }
 .feedback__header {
-  padding: 5rem 10rem;
+  padding: 5rem;
 }
 .feedback__box {
   display: grid;
   grid-template-columns: min-content 1fr min-content;
   align-items: center;
   gap: 3rem;
-  padding: 0 10rem;
 }
 .feedback__box-down {
   padding: 3rem 0 5rem;
@@ -652,6 +681,10 @@ svg {
   border: none;
   font-size: 3rem;
   font-weight: 500;
+}
+
+.color-button {
+  width: 24rem;
 }
 
 .main-button {
@@ -769,9 +802,10 @@ svg {
   margin: 0 auto;
 }
 .footerIn ul {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 5rem;
-  justify-content: center;
+  justify-items: center;
   padding-bottom: 5rem;
 }
 .footerIn ul a {
@@ -802,10 +836,90 @@ body {
   padding: 0 5rem;
 }
 
-.container-first {
-  height: 100vh;
-}
-
 section {
   border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 1080px) {
+  .header {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .header img {
+    width: 70%;
+  }
+  .operations {
+    padding: 10rem;
+  }
+  .feedback {
+    padding: 15rem 3rem;
+  }
+  .feedback__header {
+    padding: 5rem;
+  }
+  .feedback__box {
+    padding: 0 5rem;
+  }
+  .p-side {
+    padding: 0;
+  }
+}
+@media (max-width: 950px) {
+  .tittle-white {
+    font-size: 2.5rem;
+  }
+  .feedback {
+    padding: 15rem 0;
+  }
+  .feedback__header {
+    padding: 5rem 0;
+  }
+  .feedback__box {
+    padding: 0;
+  }
+  .operations {
+    padding: 10rem 0;
+  }
+  .three {
+    grid-row: 4/5;
+  }
+  .features__box {
+    text-align: center;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .features__box img {
+    width: 70%;
+  }
+  .features__box-left {
+    grid-column: 1/-1;
+  }
+  .features__box-right {
+    grid-column: 1/-1;
+  }
+}
+@media (max-width: 1200px) {
+  .button3 {
+    grid-column: 1/-1;
+  }
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  .title1 {
+    font-size: 2.5rem;
+  }
+  .title2 {
+    font-size: 2.5rem;
+  }
+  .container {
+    padding: 0 2rem;
+  }
+  .operations__info {
+    grid-template-columns: 1fr;
+  }
+  .footer__header {
+    padding: 7rem 2rem;
+  }
 }/*# sourceMappingURL=style.css.map */
