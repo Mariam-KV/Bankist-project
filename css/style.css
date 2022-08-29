@@ -922,4 +922,44 @@ section {
   .footer__header {
     padding: 7rem 2rem;
   }
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  padding: 3rem 5rem;
+  left: 50%;
+  top: 50%;
+  backdrop-filter: blur(4px);
+  transform: translate(-50%, -50%);
+  background-color: white;
+  box-shadow: 0.5rem 0.5rem 4rem grey;
+}
+.modal form {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0;
+  justify-content: center;
+  gap: 2rem;
+}
+.modal input {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  color: black;
+  width: 60%;
+  margin: 0 auto;
+  border: 0.1rem solid #444;
+  justify-self: center;
+}
+.modal .next-step {
+  text-align: center;
+}
+.modal .closed {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background-color: transparent;
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

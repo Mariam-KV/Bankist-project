@@ -89,4 +89,44 @@ section
     .footer__header
         padding: 7rem 2rem
 
+         
+.modal
+    display: none
+    position: fixed
+    z-index: 101
+    padding: 3rem 5rem
+  
+    left: 50%
+    top: 50%
+    backdrop-filter: blur(4px)
+    transform: translate(-50%,-50%)
+    background-color: white
+    box-shadow: .5rem .5rem 4rem grey
+    form
+        display: flex
+        flex-direction: column
+        padding: 3rem 0
+        justify-content: center
+        gap: 2rem
+
+    input
+        padding: 1rem 2rem
+        font-size: 2rem
+        color: black
+        width: 60%
+        margin: 0 auto
+        border: .1rem solid #444
+        justify-self: center
+    .next-step
+        text-align: center
         
+        
+
+    .closed
+        position: absolute
+        right: 1rem
+        top: 1rem
+        background-color: transparent
+        border: none
+        font-size: 3rem
+        cursor: pointer
