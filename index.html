@@ -16,13 +16,15 @@
       <section class="container-first">
         <nav class="nav">
           <div class="nav__logo">
-            <a href="#"><img src="img\logo.png" alt="logo" /></a>
+            <a href="#"
+              ><img class="nav__logo clicked" src="img\logo.png" alt="logo"
+            /></a>
           </div>
           <div class="nav__links" id="add">
-            <div class="main_nav_list">
-              <a href="#Features" class="clicked">Features</a>
-              <a href="#Operations" class="clicked">Operations</a>
-              <a href="#testi" class="clicked">Testimonials</a>
+            <div class="main_nav_list" id="nav_list">
+              <a href="#Features" class="clicked clicking">Features</a>
+              <a href="#Operations" class="clicked clicking">Operations</a>
+              <a href="#testi" class="clicked clicking">Testimonials</a>
               <a href="#t" class="main-button clicked open">Open account</a>
             </div>
           </div>
@@ -36,29 +38,33 @@
             <h3 class="title1 p-3rem">
               A simpler banking experience for a simpler life.
             </h3>
-            <a href="#Features" class="secondary-button">Learn more ↓</a>
+            <a href="#Features" class="secondary-button" id="learn"
+              >Learn more ↓</a
+            >
           </div>
           <div class="header__right">
             <div class="hero"><img src="img\hero.png" alt="hero" /></div>
           </div>
         </div>
       </section>
-      <div class="modal">
-        <button class="closed hide">×</button>
-        <h3 class="title2">
-          Open your bank account in just
-          <span class="add-gradient">5 minutes</span>
-        </h3>
-        <form>
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
-          <input type="email" placeholder="Email Address" />
-        </form>
-        <div class="next-step">
-          <a href="#" class="main-button hide"> Next step →</a>
+      <div class="overlay">
+        <div class="modal">
+          <button class="closed hide">×</button>
+          <h3 class="title2">
+            Open your bank account in just
+            <span class="add-gradient">5 minutes</span>
+          </h3>
+          <form>
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+            <input type="email" placeholder="Email Address" />
+          </form>
+          <div class="next-step">
+            <a href="#" class="main-button hide"> Next step →</a>
+          </div>
         </div>
       </div>
-      <section class="features" id="Features">
+      <section class="features section" id="Features">
         <div class="features__title p-side">
           <div class="title-green">FEATURES</div>
           <div class="title2">
@@ -67,7 +73,12 @@
         </div>
         <div class="features__box">
           <div class="features__box-left one">
-            <img src="img\digital.jpg" alt="computer" />
+            <img
+              src="img\digital-lazy.jpg"
+              data-src="img\digital.jpg"
+              class="lazy-img"
+              alt="computer"
+            />
           </div>
           <div class="features__box-right two">
             <div class="green">
@@ -97,10 +108,20 @@
             </p>
           </div>
           <div class="features__box-right four">
-            <img src="img\grow.jpg" alt="plant" />
+            <img
+              src="img\grow-lazy.jpg"
+              class="lazy-img"
+              data-src="img\grow.jpg"
+              alt="plant"
+            />
           </div>
           <div class="features__box-left five">
-            <img src="img\card.jpg" alt="card" />
+            <img
+              src="img\card-lazy.jpg"
+              class="lazy-img"
+              data-src=" img\card.jpg"
+              alt="card"
+            />
           </div>
           <div class="features__box-right six">
             <div class="green">
@@ -117,74 +138,80 @@
           </div>
         </div>
       </section>
-      <section class="operations" id="Operations">
+      <section class="operations section" id="Operations">
         <div>
           <h2 class="title-green">OPERATIONS</h2>
           <h4 class="title2">
             Everything as simple as possible, but no simpler.
           </h4>
         </div>
-        <div class="lineOfButtons">
-          <a href="#" class="color-button button1">01 Instant Transfers </a>
-          <a href="#" class="button2 color-button">02 Instant Loans</a>
-          <a href="#" class="button3 color-button">03 Instant Closing</a>
-        </div>
-        <div class="operations__info">
-          <div class="yellow">
-            <svg>
-              <use xlink:href="img/icons.svg#icon-upload"></use>
-            </svg>
+        <div class="operat">
+          <div class="lineOfButtons">
+            <button class="color-button button1 transfer">
+              01 Instant Transfers
+            </button>
+            <button class="button2 color-button loans">02 Instant Loans</button>
+            <button class="button3 color-button close">
+              03 Instant Closing
+            </button>
           </div>
-          <div>
-            <h4 class="title-gray">
-              Tranfser money to anyone, instantly! No fees, no BS.
-            </h4>
-            <p class="title-little">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
+          <div class="operations__info info1">
+            <div class="yellow">
+              <svg>
+                <use xlink:href="img/icons.svg#icon-upload"></use>
+              </svg>
+            </div>
+            <div>
+              <h4 class="title-gray">
+                Tranfser money to anyone, instantly! No fees, no BS.
+              </h4>
+              <p class="title-little">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="operations__info">
-          <div class="green">
-            <svg>
-              <use xlink:href="img/icons.svg#icon-home"></use>
-            </svg>
+          <div class="operations__info info2 hidecontent">
+            <div class="green">
+              <svg>
+                <use xlink:href="img/icons.svg#icon-home"></use>
+              </svg>
+            </div>
+            <div>
+              <h4 class="title-gray">
+                Buy a home or make your dreams come true, with instant loans.
+              </h4>
+              <p class="title-little">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </p>
+            </div>
           </div>
-          <div>
-            <h4 class="title-gray">
-              Buy a home or make your dreams come true, with instant loans.
-            </h4>
-            <p class="title-little">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.
-            </p>
-          </div>
-        </div>
-        <div class="operations__info">
-          <div class="red">
-            <svg>
-              <use xlink:href="img/icons.svg#icon-user-x"></use>
-            </svg>
-          </div>
-          <div>
-            <h4 class="title-gray">
-              Tranfser money to anyone, instantly! No fees, no BS.
-            </h4>
-            <p class="title-little">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
+          <div class="operations__info info3 hidecontent">
+            <div class="red">
+              <svg>
+                <use xlink:href="img/icons.svg#icon-user-x"></use>
+              </svg>
+            </div>
+            <div>
+              <h4 class="title-gray">
+                No longer need your account? No problem! Close it instantly.
+              </h4>
+              <p class="title-little">
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequa
+              </p>
+            </div>
           </div>
         </div>
       </section>
-      <section class="feedback" id="testi">
+      <section class="feedback section" id="testi">
         <div class="feedback__header">
           <h2 class="title-green">NOT SURE YET?</h2>
           <h4 class="title2">
@@ -225,7 +252,7 @@
         </div>
       </section>
     </div>
-    <section class="footer">
+    <section class="footer section">
       <div class="footerIn">
         <div class="footer__header">
           <h4 class="tittle-white">

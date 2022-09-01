@@ -287,6 +287,10 @@ h1 {
   clip-path: polygon(10% 3%, 100% 3%, 90% 100%, 0% 100%);
 }
 
+.container-first {
+  min-height: 100vh;
+}
+
 .header {
   display: grid;
   grid-template-columns: 1.25fr 0.75fr;
@@ -386,6 +390,10 @@ svg {
   font-weight: 300;
 }
 
+.lazy-img {
+  filter: blur(2rem);
+}
+
 .features {
   max-width: 110rem;
   margin: 0 auto;
@@ -405,7 +413,7 @@ svg {
   grid-column: 2/3;
 }
 .features__box img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .color-button {
@@ -516,10 +524,12 @@ svg {
 }
 
 .color-button {
+  cursor: pointer;
   transition-duration: 1s;
   padding: 1rem 2rem;
   border-radius: 5rem;
   text-decoration: none;
+  border: none;
   color: #444;
   font-size: 2rem;
 }
@@ -836,8 +846,25 @@ body {
   padding: 0 5rem;
 }
 
+.section--hidden {
+  opacity: 0;
+  transform: translateY(18rem);
+}
+
 section {
   border-bottom: 1px solid #ddd;
+}
+
+.hidecontent {
+  display: none;
+}
+
+.sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.8);
+  left: 0;
+  right: 0;
+  padding: 1.5rem 10rem;
 }
 
 @media (max-width: 1080px) {
@@ -923,6 +950,19 @@ section {
     padding: 7rem 2rem;
   }
 }
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -933,7 +973,7 @@ section {
   backdrop-filter: blur(4px);
   transform: translate(-50%, -50%);
   background-color: white;
-  box-shadow: 0.5rem 0.5rem 4rem grey;
+  box-shadow: 0.5rem 0.5rem 4rem black;
 }
 .modal form {
   display: flex;

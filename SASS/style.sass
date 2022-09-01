@@ -24,13 +24,22 @@ body
     margin: 0 auto
     padding: 0 5rem
     
-
+.section--hidden
+    opacity: 0
+    transform: translateY(18rem)
 section
     border-bottom: 1px solid #ddd
 
 
+.hidecontent
+    display: none
 
-
+.sticky
+    position: fixed
+    background-color: rgba(255,255,255,0.8)
+    left: 0
+    right: 0
+    padding: 1.5rem 10rem
 @media (max-width:1080px)
     
     .header
@@ -89,7 +98,18 @@ section
     .footer__header
         padding: 7rem 2rem
 
-         
+.overlay 
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.5)
+    backdrop-filter: blur(4px)
+    z-index: 100
+    transition: all 0.5s
+
 .modal
     display: none
     position: fixed
@@ -101,7 +121,7 @@ section
     backdrop-filter: blur(4px)
     transform: translate(-50%,-50%)
     background-color: white
-    box-shadow: .5rem .5rem 4rem grey
+    box-shadow: .5rem .5rem 4rem black
     form
         display: flex
         flex-direction: column
