@@ -687,10 +687,12 @@ svg {
 }
 .feedback__box-pointer button {
   cursor: pointer;
-  background-color: transparent;
+  background-color: rgba(240, 240, 240, 0.5764705882);
   border: none;
   font-size: 3rem;
   font-weight: 500;
+  padding: 1rem;
+  border-radius: 50%;
 }
 
 .color-button {
@@ -846,13 +848,46 @@ body {
   padding: 0 5rem;
 }
 
+.box {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.hide-box {
+  position: absolute;
+}
+
+.pointer-left, .pointer-right {
+  z-index: 3334;
+}
+
+.dot {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  background-color: #cacaca;
+}
+
+.dot-active {
+  background-color: #444;
+}
+
 .section--hidden {
   opacity: 0;
-  transform: translateY(18rem);
+  transform: translateY(10rem);
 }
 
 section {
   border-bottom: 1px solid #ddd;
+  transition: transform 1s, opacity 1s;
+}
+
+.good-img {
+  transition: 1.5s;
 }
 
 .hidecontent {

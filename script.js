@@ -80,28 +80,9 @@ document.querySelector(".nav").addEventListener("mouseover", function (e) {
 document.querySelector(".nav").addEventListener("mouseout", function (e) {
   handleOpacity(e, 1);
 });
-/*
-//sticky navigation
-
-
-
-
 
 //lazy loading images
 
-/*let imgTargets = document.querySelectorAll("img[data-src]");
-
-function func(entries, observer) {
-  let [entry] = entries;
-  if (!entry.isIntersecting) return;
-
-  entry.target.src = entry.target.dataset.src;
-  entry.target.addEventListener("load", function () {
-    entry.target.classList.remove("lazy-img");
-  });
-}
-let imgObserver = new IntersectionObserver(func, { root: null, threshold: 0 });
-imgTargets.forEach((el) => imgObserver.observe(el));*/
 let navBar = document.querySelector(".nav");
 
 let header = document.querySelector(".header");
@@ -119,7 +100,6 @@ obesrver2.observe(header);
 let sections = document.querySelectorAll(".section");
 function funcSection(entries) {
   let entry = entries[0];
-  console.log(entry);
   if (entry.isIntersecting) {
     entry.target.classList.remove("section--hidden");
     observerSection.unobserve(entry.target);
@@ -127,9 +107,97 @@ function funcSection(entries) {
 }
 let observerSection = new IntersectionObserver(funcSection, {
   null: 0,
-  threshold: 0.15,
+  threshold: 0.1,
 });
 sections.forEach((el) => {
   observerSection.observe(el);
-  el.classList.add("section--hidden");
+  //el.classList.add("section--hidden");
 });
+
+let imgTargets = document.querySelectorAll("img[data-src]");
+
+function func(entries, observer) {
+  let [entry] = entries;
+  if (!entry.isIntersecting) return;
+
+  entry.target.src = entry.target.dataset.src;
+  entry.target.addEventListener("load", function () {
+    entry.target.classList.remove("lazy-img");
+    imgObserver.unobserve(entry.target);
+  });
+}
+let imgObserver = new IntersectionObserver(func, { root: null, threshold: 0 });
+imgTargets.forEach((el) => imgObserver.observe(el));
+
+let sliders = document.querySelectorAll(".slider-box");
+let currSlide = 0;
+sliders.forEach((el, index) => {
+  el.style.transform = `translateX(${index * 110}%)`;
+});
+
+//sliders
+let box = document.querySelector(".box");
+let moveRight = () => {
+  if (currSlide === maxSlide - 1) {
+    currSlide = 0;
+  } else {
+    currSlide++;
+  }
+  move(currSlide);
+};
+let moveLeft = () => {
+  if (currSlide === 0) {
+    currSlide = maxSlide - 1;
+  } else {
+    currSlide--;
+  }
+  move(currSlide);
+};
+let maxSlide = sliders.length;
+let pointerRight = document
+  .querySelector(".pointer-left")
+  .addEventListener("click", moveLeft);
+
+let pointerLeft = document
+  .querySelector(".pointer-right")
+  .addEventListener("click", moveRight);
+
+let move = (slide) => {
+  sliders.forEach((el, index) => {
+    el.style.transform = `translateX(${(index - slide) * 110}%)`;
+  });
+};
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "ArrowRight") {
+    moveRight();
+  } else if (e.key === "ArrowLeft") {
+    moveLeft();
+  }
+  //same e.key === "ArrowRight" && moveLeft()
+});
+/* //dots
+let dots = document.querySelector(".dots");
+let createDots = function () {
+  sliders.forEach((_, index) => {
+    dots.insertAdjacentHTML(
+      "beforeend",
+      `
+     <button class="dot" data-slide="${index}"></button>`
+    );
+  });
+};
+createDots();
+dots.addEventListener("click", (e) => {
+  if (e.target.classList.contains("dot")) {
+    let slide = e.target.dataset.slide;
+    move(slide);
+  }
+  dots.forEach((e) => {
+    e.target.classList.remove("dot-active");
+  });
+  document
+    .querySelector(`.dot[data-slide=${slide}]`)
+    .classList.add("dot-active");
+});
+*/
