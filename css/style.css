@@ -175,13 +175,19 @@ svg {
 .nav {
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 2rem 0;
   align-items: center;
 }
 .nav__logo img {
   width: 17rem;
 }
-.nav__links a {
+
+.main_nav_list {
+  display: flex;
+  align-items: center;
+}
+
+.clicked {
   font-size: 1.8rem;
   color: #444444;
   margin-right: 3rem;
@@ -842,6 +848,16 @@ body {
   background-color: #F3F3F3;
 }
 
+.make-menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 30vh;
+  background-color: 255, 25, 245, 0.6;
+  z-index: 34444;
+}
+
 .container {
   max-width: 120rem;
   margin: 0 auto;
@@ -852,6 +868,44 @@ body {
   display: flex;
   position: relative;
   overflow: hidden;
+}
+
+.menu {
+  display: none;
+}
+
+.newmenu {
+  display: none;
+}
+
+.x {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 3rem;
+  cursor: pointer;
+}
+
+.make-menu {
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  gap: 3rem;
+  font-size: 5rem;
+  height: 30vh;
+  background-color: rgb(255, 255, 255);
+}
+.make-menu a {
+  margin: 0;
+}
+.make-menu .main-button {
+  width: 12rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.hide {
+  display: none;
 }
 
 .hide-box {
@@ -928,6 +982,16 @@ section {
   }
 }
 @media (max-width: 950px) {
+  .menu {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .makeHide {
+    display: none;
+  }
+  .nav {
+    padding: 2rem;
+  }
   .feedback__box {
     gap: 0;
   }

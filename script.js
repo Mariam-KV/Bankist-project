@@ -68,7 +68,7 @@ function adding(first, second) {
 let links = document.querySelectorAll(".clicked");
 let handleOpacity = function (event, opacity) {
   links.forEach((el) => {
-    if (event.target != el) {
+    if (event.target === el) {
       el.style.opacity = opacity;
     }
   });
@@ -190,7 +190,7 @@ dots.addEventListener("click", (e) => {
 */
 let navBar2 = document.querySelector(".nav");
 
-let header2 = document.querySelector(".header-main");
+let header2 = document.querySelector(".container-first");
 function func5(entries) {
   let [entry] = entries;
   if (!entry.isIntersecting) {
@@ -199,5 +199,25 @@ function func5(entries) {
     navBar2.classList.remove("sticky");
   }
 }
-let obesrver5 = new IntersectionObserver(func5, { null: 0, threshold: 0 });
+let obesrver5 = new IntersectionObserver(func5, {
+  null: 0,
+  threshold: 0,
+  rootMargin: "-80px",
+});
 obesrver5.observe(header2);
+let navLinks = document.querySelector(".newmenu");
+let x = document.querySelector(".x");
+let svgHide = document.querySelector(".menu").addEventListener("click", () => {
+  x.style.display = "block";
+  navLinks.classList.add("make-menu");
+  navLinks.style.display = "flex";
+  navLinks.style.flexDirection = "column";
+});
+navLinks.addEventListener("click", (e) => {
+  console.log(e);
+  if (e.target.classList.contains("clicked")) {
+    x.style.display = "none";
+    navLinks.classList.remove("make-menu");
+    navLinks.style.display = "none";
+  }
+});
