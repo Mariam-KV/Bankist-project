@@ -5,8 +5,8 @@
 
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
-let btnCloseModal = document.querySelectorAll(".hide");
-let btnOpenModal = document.querySelectorAll(".open");
+let btnCloseModal = document.querySelector(".hide");
+let btnOpenModal = document.querySelector(".open");
 
 function show() {
   overlay.style.display = "block";
@@ -17,8 +17,8 @@ function hide() {
   overlay.style.display = " none";
 }
 
-btnCloseModal.forEach((el) => el.addEventListener("click", hide));
-btnOpenModal.forEach((el) => el.addEventListener("click", show));
+btnCloseModal.addEventListener("click", hide);
+btnOpenModal.addEventListener("click", show);
 
 let btnLearn = document.getElementById("learn");
 let section1 = document.getElementById("Features");
@@ -83,19 +83,6 @@ document.querySelector(".nav").addEventListener("mouseout", function (e) {
 
 //lazy loading images
 
-let navBar = document.querySelector(".nav");
-
-let header = document.querySelector(".header");
-function func(entries) {
-  let [entry] = entries;
-  if (!entry.isIntersecting) {
-    navBar.classList.add("sticky");
-  } else {
-    navBar.classList.remove("sticky");
-  }
-}
-let obesrver2 = new IntersectionObserver(func, { null: 0, threshold: 0 });
-obesrver2.observe(header);
 //reveal sections
 let sections = document.querySelectorAll(".section");
 function funcSection(entries) {
@@ -111,7 +98,7 @@ let observerSection = new IntersectionObserver(funcSection, {
 });
 sections.forEach((el) => {
   observerSection.observe(el);
-  //el.classList.add("section--hidden");
+  el.classList.add("section--hidden");
 });
 
 let imgTargets = document.querySelectorAll("img[data-src]");
@@ -201,3 +188,16 @@ dots.addEventListener("click", (e) => {
     .classList.add("dot-active");
 });
 */
+let navBar2 = document.querySelector(".nav");
+
+let header2 = document.querySelector(".header-main");
+function func5(entries) {
+  let [entry] = entries;
+  if (!entry.isIntersecting) {
+    navBar2.classList.add("sticky");
+  } else {
+    navBar2.classList.remove("sticky");
+  }
+}
+let obesrver5 = new IntersectionObserver(func5, { null: 0, threshold: 0 });
+obesrver5.observe(header2);

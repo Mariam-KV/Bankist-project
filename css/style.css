@@ -900,6 +900,7 @@ section {
   left: 0;
   right: 0;
   padding: 1.5rem 10rem;
+  z-index: 78865;
 }
 
 @media (max-width: 1080px) {
@@ -927,6 +928,9 @@ section {
   }
 }
 @media (max-width: 950px) {
+  .feedback__box {
+    gap: 0;
+  }
   .tittle-white {
     font-size: 2.5rem;
   }
