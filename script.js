@@ -32,10 +32,12 @@ btnLearn.addEventListener("click", function (e) {
 let nav = document.getElementById("nav_list");
 
 nav.addEventListener("click", function (e) {
-  e.preventDefault();
   let id = e.target.getAttribute("href");
-  document.querySelector(id).scrollIntoView({ behavior: "smooth" });
-  e.target.classList.contains("clicking");
+  if (id.startsWith("#")) {
+    e.preventDefault();
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    e.target.classList.contains("clicking");
+  }
 });
 //DOM traversing
 
@@ -214,7 +216,6 @@ let svgHide = document.querySelector(".menu").addEventListener("click", () => {
   navLinks.style.flexDirection = "column";
 });
 navLinks.addEventListener("click", (e) => {
-  console.log(e);
   if (e.target.classList.contains("clicked")) {
     x.style.display = "none";
     navLinks.classList.remove("make-menu");
