@@ -222,3 +222,4 @@ navLinks.addEventListener("click", (e) => {
     navLinks.style.display = "none";
   }
 });
+

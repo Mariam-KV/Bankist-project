@@ -51,16 +51,34 @@
   padding-bottom: 2rem;
 }
 
-.green svg {
-  fill: #4bbb7d;
+.green, .yellow, .red {
+  border-radius: 100%;
+  width: 5rem;
+  height: 5rem;
   background-color: rgba(94, 197, 118, 0.2274509804);
+}
+.green svg, .yellow svg, .red svg {
+  fill: #4bbb7d;
 }
 
 svg {
   width: 5rem;
   height: 5rem;
   padding: 1rem;
-  border-radius: 50%;
+}
+
+.yellow {
+  background-color: rgba(255, 205, 3, 0.1921568627);
+}
+.yellow svg {
+  fill: #ffbb00;
+}
+
+.red {
+  background-color: rgba(255, 88, 96, 0.1764705882);
+}
+.red svg {
+  fill: #fd424b;
 }
 
 .p-3rem {
@@ -138,16 +156,34 @@ svg {
   padding-bottom: 2rem;
 }
 
-.green svg {
-  fill: #4bbb7d;
+.green, .yellow, .red {
+  border-radius: 100%;
+  width: 5rem;
+  height: 5rem;
   background-color: rgba(94, 197, 118, 0.2274509804);
+}
+.green svg, .yellow svg, .red svg {
+  fill: #4bbb7d;
 }
 
 svg {
   width: 5rem;
   height: 5rem;
   padding: 1rem;
-  border-radius: 50%;
+}
+
+.yellow {
+  background-color: rgba(255, 205, 3, 0.1921568627);
+}
+.yellow svg {
+  fill: #ffbb00;
+}
+
+.red {
+  background-color: rgba(255, 88, 96, 0.1764705882);
+}
+.red svg {
+  fill: #fd424b;
 }
 
 .p-3rem {
@@ -249,16 +285,34 @@ svg {
   padding-bottom: 2rem;
 }
 
-.green svg {
-  fill: #4bbb7d;
+.green, .yellow, .red {
+  border-radius: 100%;
+  width: 5rem;
+  height: 5rem;
   background-color: rgba(94, 197, 118, 0.2274509804);
+}
+.green svg, .yellow svg, .red svg {
+  fill: #4bbb7d;
 }
 
 svg {
   width: 5rem;
   height: 5rem;
   padding: 1rem;
-  border-radius: 50%;
+}
+
+.yellow {
+  background-color: rgba(255, 205, 3, 0.1921568627);
+}
+.yellow svg {
+  fill: #ffbb00;
+}
+
+.red {
+  background-color: rgba(255, 88, 96, 0.1764705882);
+}
+.red svg {
+  fill: #fd424b;
 }
 
 .p-3rem {
@@ -362,16 +416,34 @@ h1 {
   padding-bottom: 2rem;
 }
 
-.green svg {
-  fill: #4bbb7d;
+.green, .yellow, .red {
+  border-radius: 100%;
+  width: 5rem;
+  height: 5rem;
   background-color: rgba(94, 197, 118, 0.2274509804);
+}
+.green svg, .yellow svg, .red svg {
+  fill: #4bbb7d;
 }
 
 svg {
   width: 5rem;
   height: 5rem;
   padding: 1rem;
-  border-radius: 50%;
+}
+
+.yellow {
+  background-color: rgba(255, 205, 3, 0.1921568627);
+}
+.yellow svg {
+  fill: #ffbb00;
+}
+
+.red {
+  background-color: rgba(255, 88, 96, 0.1764705882);
+}
+.red svg {
+  fill: #fd424b;
 }
 
 .p-3rem {
@@ -475,16 +547,34 @@ svg {
   padding-bottom: 2rem;
 }
 
-.green svg {
-  fill: #4bbb7d;
+.green, .yellow, .red {
+  border-radius: 100%;
+  width: 5rem;
+  height: 5rem;
   background-color: rgba(94, 197, 118, 0.2274509804);
+}
+.green svg, .yellow svg, .red svg {
+  fill: #4bbb7d;
 }
 
 svg {
   width: 5rem;
   height: 5rem;
   padding: 1rem;
-  border-radius: 50%;
+}
+
+.yellow {
+  background-color: rgba(255, 205, 3, 0.1921568627);
+}
+.yellow svg {
+  fill: #ffbb00;
+}
+
+.red {
+  background-color: rgba(255, 88, 96, 0.1764705882);
+}
+.red svg {
+  fill: #fd424b;
 }
 
 .p-3rem {
@@ -564,16 +654,6 @@ svg {
   background-color: #fd424b;
 }
 
-.yellow svg {
-  fill: #ffbb00;
-  background-color: rgba(255, 205, 3, 0.1921568627);
-}
-
-.red svg {
-  fill: #fd424b;
-  background-color: rgba(255, 88, 96, 0.1764705882);
-}
-
 .color-button {
   width: 24rem;
 }
@@ -627,16 +707,34 @@ svg {
   padding-bottom: 2rem;
 }
 
-.green svg {
-  fill: #4bbb7d;
+.green, .yellow, .red {
+  border-radius: 100%;
+  width: 5rem;
+  height: 5rem;
   background-color: rgba(94, 197, 118, 0.2274509804);
+}
+.green svg, .yellow svg, .red svg {
+  fill: #4bbb7d;
 }
 
 svg {
   width: 5rem;
   height: 5rem;
   padding: 1rem;
-  border-radius: 50%;
+}
+
+.yellow {
+  background-color: rgba(255, 205, 3, 0.1921568627);
+}
+.yellow svg {
+  fill: #ffbb00;
+}
+
+.red {
+  background-color: rgba(255, 88, 96, 0.1764705882);
+}
+.red svg {
+  fill: #fd424b;
 }
 
 .p-3rem {
@@ -754,16 +852,34 @@ svg {
   padding-bottom: 2rem;
 }
 
-.green svg {
-  fill: #4bbb7d;
+.green, .yellow, .red {
+  border-radius: 100%;
+  width: 5rem;
+  height: 5rem;
   background-color: rgba(94, 197, 118, 0.2274509804);
+}
+.green svg, .yellow svg, .red svg {
+  fill: #4bbb7d;
 }
 
 svg {
   width: 5rem;
   height: 5rem;
   padding: 1rem;
-  border-radius: 50%;
+}
+
+.yellow {
+  background-color: rgba(255, 205, 3, 0.1921568627);
+}
+.yellow svg {
+  fill: #ffbb00;
+}
+
+.red {
+  background-color: rgba(255, 88, 96, 0.1764705882);
+}
+.red svg {
+  fill: #fd424b;
 }
 
 .p-3rem {
