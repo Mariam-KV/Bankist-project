@@ -3,22 +3,7 @@
 ///////////////////////////////////////
 // Modal window
 
-const modal = document.querySelector(".modal");
-const overlay = document.querySelector(".overlay");
-let btnCloseModal = document.querySelector(".hide");
-let btnOpenModal = document.querySelector(".open");
 
-function show() {
-  overlay.style.display = "block";
-  modal.style.display = "block";
-}
-function hide() {
-  modal.style.display = "none";
-  overlay.style.display = " none";
-}
-
-btnCloseModal.addEventListener("click", hide);
-btnOpenModal.addEventListener("click", show);
 
 let btnLearn = document.getElementById("learn");
 let section1 = document.getElementById("Features");
@@ -222,4 +207,3 @@ navLinks.addEventListener("click", (e) => {
     navLinks.style.display = "none";
   }
 });
-

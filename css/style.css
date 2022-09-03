@@ -915,7 +915,7 @@ svg {
   background-color: #444;
 }
 .footer__header {
-  padding: 7rem 10rem;
+  padding: 7rem 10rem 0;
 }
 .footer__links {
   text-align: center;
