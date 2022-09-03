@@ -3,8 +3,6 @@
 ///////////////////////////////////////
 // Modal window
 
-
-
 let btnLearn = document.getElementById("learn");
 let section1 = document.getElementById("Features");
 btnLearn.addEventListener("click", function (e) {
@@ -52,21 +50,6 @@ function adding(first, second) {
 }
 
 // navbar
-let links = document.querySelectorAll(".clicked");
-let handleOpacity = function (event, opacity) {
-  links.forEach((el) => {
-    if (event.target === el) {
-      el.style.opacity = opacity;
-    }
-  });
-};
-
-document.querySelector(".nav").addEventListener("mouseover", function (e) {
-  handleOpacity(e, 0.5);
-});
-document.querySelector(".nav").addEventListener("mouseout", function (e) {
-  handleOpacity(e, 1);
-});
 
 //lazy loading images
 
