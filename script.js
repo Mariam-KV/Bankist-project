@@ -131,33 +131,8 @@ document.addEventListener("keydown", function (e) {
   } else if (e.key === "ArrowLeft") {
     moveLeft();
   }
-  //same e.key === "ArrowRight" && moveLeft()
 });
-/* //dots
-let dots = document.querySelector(".dots");
-let createDots = function () {
-  sliders.forEach((_, index) => {
-    dots.insertAdjacentHTML(
-      "beforeend",
-      `
-     <button class="dot" data-slide="${index}"></button>`
-    );
-  });
-};
-createDots();
-dots.addEventListener("click", (e) => {
-  if (e.target.classList.contains("dot")) {
-    let slide = e.target.dataset.slide;
-    move(slide);
-  }
-  dots.forEach((e) => {
-    e.target.classList.remove("dot-active");
-  });
-  document
-    .querySelector(`.dot[data-slide=${slide}]`)
-    .classList.add("dot-active");
-});
-*/
+
 let navBar2 = document.querySelector(".nav");
 
 let header2 = document.querySelector(".container-first");
@@ -180,11 +155,13 @@ let x = document.querySelector(".x");
 let svgHide = document.querySelector(".menu").addEventListener("click", () => {
   x.style.display = "block";
   navLinks.classList.add("make-menu");
+  document.body.style.overflow = "hidden";
   navLinks.style.display = "flex";
   navLinks.style.flexDirection = "column";
 });
 navLinks.addEventListener("click", (e) => {
   if (e.target.classList.contains("clicked")) {
+    document.body.style.overflow = "scroll";
     x.style.display = "none";
     navLinks.classList.remove("make-menu");
     navLinks.style.display = "none";

@@ -780,15 +780,14 @@ svg {
   gap: 3rem;
 }
 .feedback__box .title-little {
-  font-size: 1.4rem;
-  line-height: 2.3rem;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
 }
 .feedback__box-down {
   padding: 3rem 0 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 3rem;
 }
 .feedback__box-down img {
   border-radius: 100%;
@@ -973,16 +972,6 @@ body {
   background-color: #F3F3F3;
 }
 
-.make-menu {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  padding: 1rem 0;
-  background-color: 255, 25, 245, 0.6;
-  z-index: 34444;
-}
-
 .container {
   max-width: 120rem;
   margin: 0 auto;
@@ -1015,9 +1004,14 @@ body {
   position: absolute;
   justify-content: center;
   text-align: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 1rem 0;
+  z-index: 34444;
   gap: 1.5rem;
   font-size: 5rem;
-  height: 100vh;
+  height: 30vh;
   background-color: rgb(255, 255, 255);
 }
 .make-menu a {
@@ -1176,6 +1170,10 @@ section {
   }
   .operations__info {
     grid-template-columns: 1fr;
+  }
+  .title-little {
+    font-size: 1.4rem !important;
+    line-height: 2.3rem !important;
   }
 }
 .overlay {

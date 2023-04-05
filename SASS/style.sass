@@ -19,20 +19,15 @@ body
     font-family: 'Poppins', sans-serif
     color: #444444
     background-color: #F3F3F3
-.make-menu
-    position: absolute
-    left: 0
-    top: 0
-    width: 100%
-    padding: 1rem 0
-    background-color: (255,25,245,0.6)
-    z-index: 34444
     
+
 .container
-    
+   
     max-width: 120rem
     margin: 0 auto
     padding: 0 5rem 
+    
+    
 .box
     display: flex
     position: relative
@@ -50,15 +45,24 @@ body
     right: 0rem
     top: 0rem
     cursor: pointer
-
+// body
+//         overflow: hidden
+//         height: 100vh
 .make-menu
+    
     position: absolute
     justify-content: center
     text-align: center
+    left: 0
+    top: 0
+    width: 100%
+    padding: 1rem 0
+    z-index: 34444
     gap: 1.5rem
     font-size: 5rem
-    height: 100vh
+    height: 30vh
     background-color: rgba(255,255,2445)
+   
     a
         margin: 0
     .main-button
@@ -66,6 +70,7 @@ body
         display: block
         margin: 0 auto
         
+
 
 
 .hide
@@ -178,7 +183,10 @@ section
     .operations__info 
         grid-template-columns:  1fr
 
-    
+    .title-little
+            font-size: 1.4rem !important
+          
+            line-height: 2.3rem !important
 
 .overlay 
     display: none
