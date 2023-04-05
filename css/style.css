@@ -475,7 +475,7 @@ svg {
 .features {
   max-width: 110rem;
   margin: 0 auto;
-  padding: 10rem 0 15rem;
+  padding: 5rem 0 7rem;
 }
 .features__box {
   display: grid;
@@ -764,9 +764,10 @@ svg {
 }
 
 .feedback {
-  padding: 15rem 10rem;
+  padding: 7rem 5rem;
 }
 .feedback .title-gray {
+  text-align: center;
   font-weight: 500;
 }
 .feedback__header {
@@ -778,10 +779,14 @@ svg {
   align-items: center;
   gap: 3rem;
 }
+.feedback__box .title-little {
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+}
 .feedback__box-down {
   padding: 3rem 0 5rem;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   margin-left: 3rem;
 }
@@ -919,11 +924,11 @@ svg {
   background-color: #444;
 }
 .footer__header {
-  padding: 7rem 10rem 0;
+  padding: 3rem 4rem 0rem;
 }
 .footer__links {
   text-align: center;
-  padding: 7rem 5rem 5rem;
+  padding: 0rem 0rem 1rem;
 }
 
 .footerIn {
@@ -973,7 +978,7 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  padding: 5rem 0;
+  padding: 1rem 0;
   background-color: 255, 25, 245, 0.6;
   z-index: 34444;
 }
@@ -1001,8 +1006,8 @@ body {
 .x {
   display: none;
   position: absolute;
-  right: 3rem;
-  top: 3rem;
+  right: 0rem;
+  top: 0rem;
   cursor: pointer;
 }
 
@@ -1010,7 +1015,7 @@ body {
   position: absolute;
   justify-content: center;
   text-align: center;
-  gap: 3rem;
+  gap: 1.5rem;
   font-size: 5rem;
   height: 100vh;
   background-color: rgb(255, 255, 255);
@@ -1119,7 +1124,7 @@ section {
     font-size: 2.5rem;
   }
   .feedback {
-    padding: 15rem 0;
+    padding: 5rem 0;
   }
   .feedback__header {
     padding: 5rem 0;
@@ -1171,9 +1176,6 @@ section {
   }
   .operations__info {
     grid-template-columns: 1fr;
-  }
-  .footer__header {
-    padding: 7rem 2rem;
   }
 }
 .overlay {
